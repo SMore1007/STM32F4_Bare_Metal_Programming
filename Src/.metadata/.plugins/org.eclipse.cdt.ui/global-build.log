@@ -1,0 +1,7 @@
+08:10:12 **** Build of configuration Debug for project 13_timer_output_compare ****
+make -j16 all 
+arm-none-eabi-size  13_timer_output_compare.elf 
+   text	   data	    bss	    dec	    hex	filename
+    712	      0	   1568	   2280	    8e8	13_timer_output_compare.elf
+Finished building: default.size.stdout
+ 

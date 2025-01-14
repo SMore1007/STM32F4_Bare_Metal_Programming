@@ -1,0 +1,7 @@
+1736785815892	Delete resource '5_uart_Tx/Debug/4_gpi_input.elf'
+1736785820058	Delete resource '5_uart_Tx/Debug/4_gpi_input.list'
+1736785824163	Delete resource '5_uart_Tx/Debug/4_gpi_input.map'
+1736788923196	Delete resource '9_adc_single_conversion/Src/uart.c'
+1736790137948	Delete resource '11_systick_delay/Src/adc.c'
+1736790148434	Delete resource '11_systick_delay/Inc/adc.h'
+1736819749009	Rename resource '14_timer_output_compare'
