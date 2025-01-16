@@ -5,3 +5,6 @@
 1736790137948	Delete resource '11_systick_delay/Src/adc.c'
 1736790148434	Delete resource '11_systick_delay/Inc/adc.h'
 1736819749009	Rename resource '14_timer_output_compare'
+1737016938908	Delete resource '13_Timer_Output_Compare'
+1737017923974	Rename resource '15_timer_interrupt'
+1737018183738	Delete resource '15_input_interrupt'

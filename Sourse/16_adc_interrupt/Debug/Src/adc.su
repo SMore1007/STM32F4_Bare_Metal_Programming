@@ -1,5 +1,0 @@
-D:/STM32/STM32F4/chip_headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
-../Src/adc.c:21:6:pa1_adc_interrupt_init	8	static
-../Src/adc.c:56:6:pa1_adc_init	4	static
-../Src/adc.c:81:6:start_converstion	4	static
-../Src/adc.c:91:10:adc_read	4	static

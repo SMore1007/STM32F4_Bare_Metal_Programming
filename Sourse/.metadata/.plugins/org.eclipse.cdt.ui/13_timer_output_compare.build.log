@@ -1,4 +1,4 @@
-08:10:12 **** Build of configuration Debug for project 13_timer_output_compare ****
+14:15:27 **** Incremental Build of configuration Debug for project 13_timer_output_compare ****
 make -j16 all 
 arm-none-eabi-size  13_timer_output_compare.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  13_timer_output_compare.elf
 Finished building: default.size.stdout
  
 
-08:10:13 Build Finished. 0 errors, 0 warnings. (took 197ms)
+14:15:27 Build Finished. 0 errors, 0 warnings. (took 140ms)
 

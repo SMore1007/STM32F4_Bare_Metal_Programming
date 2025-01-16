@@ -1,4 +1,14 @@
 eclipse.preferences.version=1
+forwardDeclare.compositeTypes=true
+forwardDeclare.enums=false
+forwardDeclare.externalVariables=false
+forwardDeclare.functions=false
+forwardDeclare.namespaceElements=true
+forwardDeclare.templates=false
+organizeIncludes.allowPartnerIndirectInclusion=true
+organizeIncludes.allowReordering=true
+organizeIncludes.heuristicHeader_substitution=true
+organizeIncludes.unusedStatements=REMOVE
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
