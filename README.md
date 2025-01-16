@@ -1,6 +1,6 @@
-# stm32F4 Course Repo
+# stm32F4 Bare Meetal Programming Repo
 
-Welcome to the **STM32F446RE Projects Repository**! This repository showcases various projects implemented using the STM32F446RE Nucleo board. Each project demonstrates the use of peripherals, communication protocols, and advanced features of the STM32F446RE microcontroller.
+Welcome to the **STM32F446RE Bare Metal Course Work Repository**! This repository showcases various mini projects implemented using the STM32F446RE Nucleo board. 
 
 ---
 
