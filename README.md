@@ -155,7 +155,7 @@ The following projects will include in this repository:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/SMore1007/STM32F446RE-Projects.git
+   git clone [https://github.com/SMore1007/stm32F4_Course].git
    ```
 
 2. Open **STM32CubeIDE** and import the desired project:
