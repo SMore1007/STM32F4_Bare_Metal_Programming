@@ -1,4 +1,4 @@
-# stm32F4 Bare Meetal Programming Repo
+# STM32F4 Bare Meetal Programming Repo
 
 Welcome to the **STM32F446RE Bare Metal Course Work Repository**! This repository showcases various mini projects implemented using the STM32F446RE Nucleo board. 
 
