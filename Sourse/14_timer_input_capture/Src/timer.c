@@ -7,8 +7,7 @@
 
 
 #include "stm32f446xx.h"
-
-
+#include"timer.h"
 #define TIM2EN		(1U<<0)
 #define TIM3EN		(1U<<1)
 
@@ -101,6 +100,4 @@ void tim3_pa6_input_capture(void)
 
 	/*Enable TIM3*/
 	TIM3->CR1 = CR1_CEN;
-
-
 }

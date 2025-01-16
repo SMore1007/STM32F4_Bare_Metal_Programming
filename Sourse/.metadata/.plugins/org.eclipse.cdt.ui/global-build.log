@@ -1,19 +1,25 @@
-15:44:45 **** Build of configuration Debug for project 09_adc_single_conversion ****
+16:33:52 **** Clean-only build of configuration Debug for project 14_timer_input_capture ****
+make -j16 clean 
+rm -rf ./Startup/startup_stm32f446retx.d ./Startup/startup_stm32f446retx.o
+rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/timer.cyclo ./Src/timer.d ./Src/timer.o ./Src/timer.su
+rm -rf 14_timer_input_capture.elf 14_timer_input_capture.list 14_timer_input_capture.map default.size.stdout
+ 
+16:33:52 **** Incremental Build of configuration Debug for project 14_timer_input_capture ****
 make -j16 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
-arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"D:/STM32/STM32F4/chip_headers/CMSIS/Include" -I"D:/STM32/STM32F4/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"D:/STM32/STM32F4/chip_headers/CMSIS/Include" -I"D:/STM32/STM32F4/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"D:/STM32/STM32F4/chip_headers/CMSIS/Include" -I"D:/STM32/STM32F4/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"D:/STM32/STM32F4/chip_headers/CMSIS/Include" -I"D:/STM32/STM32F4/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"D:/STM32/STM32F4/chip_headers/CMSIS/Include" -I"D:/STM32/STM32F4/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
 arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"D:/STM32/STM32F4/chip_headers/CMSIS/Include" -I"D:/STM32/STM32F4/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
-arm-none-eabi-gcc -o "09_adc_single_conversion.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32F4\Sourse\09_adc_single_conversion\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_adc_single_conversion.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_adc_single_conversion.elf
+arm-none-eabi-gcc -o "14_timer_input_capture.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\STM32F4\Sourse\14_timer_input_capture\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_timer_input_capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_timer_input_capture.elf
  
-arm-none-eabi-size  09_adc_single_conversion.elf 
-arm-none-eabi-objdump -h -S 09_adc_single_conversion.elf  > "09_adc_single_conversion.list"
+arm-none-eabi-size  14_timer_input_capture.elf 
+arm-none-eabi-objdump -h -S 14_timer_input_capture.elf  > "14_timer_input_capture.list"
    text	   data	    bss	    dec	    hex	filename
-   5400	     92	   1908	   7400	   1ce8	09_adc_single_conversion.elf
+   1008	      0	   1568	   2576	    a10	14_timer_input_capture.elf
 Finished building: default.size.stdout
  
-Finished building: 09_adc_single_conversion.list
+Finished building: 14_timer_input_capture.list
  

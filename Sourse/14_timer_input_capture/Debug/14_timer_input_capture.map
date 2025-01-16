@@ -303,6 +303,7 @@ Discarded input sections
  .group         0x00000000        0xc ./Src/timer.o
  .group         0x00000000        0xc ./Src/timer.o
  .group         0x00000000        0xc ./Src/timer.o
+ .group         0x00000000        0xc ./Src/timer.o
  .text          0x00000000        0x0 ./Src/timer.o
  .data          0x00000000        0x0 ./Src/timer.o
  .bss           0x00000000        0x0 ./Src/timer.o
@@ -322,6 +323,65 @@ Discarded input sections
  .debug_macro   0x00000000     0x102d ./Src/timer.o
  .debug_macro   0x00000000      0x11f ./Src/timer.o
  .debug_macro   0x00000000    0x1672d ./Src/timer.o
+ .debug_macro   0x00000000       0x16 ./Src/timer.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .group         0x00000000        0xc ./Src/uart.o
+ .text          0x00000000        0x0 ./Src/uart.o
+ .data          0x00000000        0x0 ./Src/uart.o
+ .bss           0x00000000        0x0 ./Src/uart.o
+ .text.__io_putchar
+                0x00000000       0x18 ./Src/uart.o
+ .text.uart2_rxtx_init
+                0x00000000       0xe0 ./Src/uart.o
+ .text.uart2_tx_init
+                0x00000000       0x98 ./Src/uart.o
+ .text.uart2_read
+                0x00000000       0x28 ./Src/uart.o
+ .text.uart2_write
+                0x00000000       0x30 ./Src/uart.o
+ .text.uart_set_baudrate
+                0x00000000       0x24 ./Src/uart.o
+ .text.compute_uart_bd
+                0x00000000       0x26 ./Src/uart.o
+ .debug_info    0x00000000      0x45b ./Src/uart.o
+ .debug_abbrev  0x00000000      0x16b ./Src/uart.o
+ .debug_aranges
+                0x00000000       0x50 ./Src/uart.o
+ .debug_rnglists
+                0x00000000       0x39 ./Src/uart.o
+ .debug_macro   0x00000000      0x105 ./Src/uart.o
+ .debug_macro   0x00000000      0xac0 ./Src/uart.o
+ .debug_macro   0x00000000       0x28 ./Src/uart.o
+ .debug_macro   0x00000000       0x22 ./Src/uart.o
+ .debug_macro   0x00000000       0x8e ./Src/uart.o
+ .debug_macro   0x00000000       0x51 ./Src/uart.o
+ .debug_macro   0x00000000      0x103 ./Src/uart.o
+ .debug_macro   0x00000000       0x6a ./Src/uart.o
+ .debug_macro   0x00000000      0x1df ./Src/uart.o
+ .debug_macro   0x00000000       0x1c ./Src/uart.o
+ .debug_macro   0x00000000       0x22 ./Src/uart.o
+ .debug_macro   0x00000000       0xd9 ./Src/uart.o
+ .debug_macro   0x00000000     0x102d ./Src/uart.o
+ .debug_macro   0x00000000      0x11f ./Src/uart.o
+ .debug_macro   0x00000000    0x1672d ./Src/uart.o
+ .debug_line    0x00000000      0x765 ./Src/uart.o
+ .debug_str     0x00000000    0x8a8f4 ./Src/uart.o
+ .comment       0x00000000       0x44 ./Src/uart.o
+ .debug_frame   0x00000000      0x100 ./Src/uart.o
+ .ARM.attributes
+                0x00000000       0x34 ./Src/uart.o
  .text          0x00000000       0x14 ./Startup/startup_stm32f446retx.o
  .data          0x00000000        0x0 ./Startup/startup_stm32f446retx.o
  .bss           0x00000000        0x0 ./Startup/startup_stm32f446retx.o
@@ -569,6 +629,7 @@ LOAD ./Src/main.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
 LOAD ./Src/timer.o
+LOAD ./Src/uart.o
 LOAD ./Startup/startup_stm32f446retx.o
 START GROUP
 LOAD D:/Users/sagar/Downloads/ST/STM32CubeIDE_1.8.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
@@ -885,7 +946,7 @@ LOAD D:/Users/sagar/Downloads/ST/STM32CubeIDE_1.8.0/STM32CubeIDE/plugins/com.st.
  .debug_rnglists
                 0x00000033       0x19 ./Startup/startup_stm32f446retx.o
 
-.debug_macro    0x00000000    0x19637
+.debug_macro    0x00000000    0x19640
  .debug_macro   0x00000000      0x1a5 ./Src/main.o
  .debug_macro   0x000001a5      0xac0 ./Src/main.o
  .debug_macro   0x00000c65       0x22 ./Src/main.o
@@ -922,18 +983,18 @@ LOAD D:/Users/sagar/Downloads/ST/STM32CubeIDE_1.8.0/STM32CubeIDE/plugins/com.st.
  .debug_macro   0x00001cc9     0x102d ./Src/main.o
  .debug_macro   0x00002cf6      0x11f ./Src/main.o
  .debug_macro   0x00002e15    0x1672d ./Src/main.o
- .debug_macro   0x00019542       0xf5 ./Src/timer.o
+ .debug_macro   0x00019542       0xfe ./Src/timer.o
 
-.debug_line     0x00000000      0xe1f
+.debug_line     0x00000000      0xe31
  .debug_line    0x00000000      0x73f ./Src/main.o
- .debug_line    0x0000073f      0x665 ./Src/timer.o
- .debug_line    0x00000da4       0x7b ./Startup/startup_stm32f446retx.o
+ .debug_line    0x0000073f      0x677 ./Src/timer.o
+ .debug_line    0x00000db6       0x7b ./Startup/startup_stm32f446retx.o
 
 .debug_str      0x00000000    0x8e1bb
  .debug_str     0x00000000    0x8df6d ./Src/main.o
                               0x8e16c (size before relaxing)
  .debug_str     0x0008df6d      0x20f ./Src/timer.o
-                              0x8a8c6 (size before relaxing)
+                              0x8a8f0 (size before relaxing)
  .debug_str     0x0008e17c       0x3f ./Startup/startup_stm32f446retx.o
                                  0x74 (size before relaxing)
 
