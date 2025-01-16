@@ -14,6 +14,7 @@ This project demonstrates GPIO manipulation on the STM32F446RE microcontroller u
 - Breadboard and jumper wires
 - Power supply (USB or external)
 
+
 ### Software
 - STM32CubeIDE or any ARM-compatible IDE (optional for reference)
 - GCC compiler (for ARM Cortex-M4)
