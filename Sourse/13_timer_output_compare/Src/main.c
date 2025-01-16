@@ -17,13 +17,35 @@
  */
 
 #include <stdint.h>
+#include<stdio.h>
+#include "stm32f446xx.h"
+#include "uart.h"
+#include"timer.h"
 
-#if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-#endif
+
+
+int timestamp = 0 ;
+
+/*Set up : Connect a jumper wire from PA5 to PA6*/
 
 int main(void)
 {
-    /* Loop forever */
-	for(;;);
+
+	tim2_pa5_output_compare();
+	tim3_pa6_input_capture();
+
+
+	while(1)
+	{
+
+       /*Wait until edge is captured*/
+		while(!(TIM3->SR & SR_CC1IF)){}
+
+		/*Read captured value*/
+		timestamp =  TIM3->CCR1;
+
+	}
+
 }
+
+
