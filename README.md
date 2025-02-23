@@ -41,8 +41,8 @@ To work with the projects in this repository, you will need:
 
 - [**STM32CubeIDE**](https://www.st.com/en/development-tools/stm32cubeide.html) (version 1.13.0 or later recommended)
 - STM32CubeMX (integrated in STM32CubeIDE)
-- Optional: [**STM32CubeProgrammer**](https://www.st.com/en/development-tools/stm32cubeprog.html)
-- Drivers for the Nucleo board (available on STMicroelectronics' website)
+
+- Drivers for the Nucleo board (available on STMicroelectronics' website) -> use Chip Header folder provided in the repo
 
 ---
 
@@ -155,18 +155,29 @@ The following projects will include in this repository:
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/SMore1007/stm32F4_Course].git
+   git clone https://github.com/SMore1007/STM32F4_Bare_Metal_Programming.git
    ```
 
 2. Open **STM32CubeIDE** and import the desired project:
    - Go to `File > Import > Existing Projects into Workspace`.
    - Select the folder containing the project files.
 
-3. Connect the STM32F446RE Nucleo board to your computer using a USB cable.
+3. Add path and symbol for preprocessor
+   I am using STM32F446RE.
+   How to add below path ?
+    In the Project Project explorer window -> right click on project -> properties -> c/c++ generals -> include -> add
+   ```bash
+   path/to/Chip Headers/Include
+   path/to/Chip Headers\Device\ST\STM32F4xx\Include
+   ```
+    Also in c/c++ general -> symbol add symbol of your specific microcontroller
+   
 
-4. Build and flash the project to the board using STM32CubeIDE.
+4. Connect the STM32F446RE Nucleo board to your computer using a USB cable.
 
-5. Follow the project-specific instructions provided in each project folder's `README.md`.
+5. Build and flash the project to the board using STM32CubeIDE.
+
+6. Follow the project-specific instructions provided in each project folder's `README.md`.
 
 ---
 
